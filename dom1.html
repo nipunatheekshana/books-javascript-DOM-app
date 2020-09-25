@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="test.js"></script>    
+
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="page-banner">
+                <h1 class="title">Bookorama</h1>
+                <p>Books for ninjas</p>
+                <form id="serch-books">
+                    <input type="text" placeholder="Search Books..">
+                </form>
+            </div>
+        </header>
+        <div id="booklist">
+            <h2 class="title">Books to read</h2>
+            <ul>
+                <li>
+                    <span class="name">Name of the wind</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">The wice man's fear</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Kafka on the sore</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">the master and the margarita</span>
+                    <span class="delete">delete</span>
+                </li>
+            </ul>
+            
+        </div>
+        <form id="add-books">
+            <input type="checkbox" id="hide">
+            <label for="hide">Hide all the books</label>
+            <input type="text" placeholder="Add a book...">
+            <button>Add</button>
+        </form>
+        <div id="tabbed-content">
+            <ul class="tabs">
+              <li data-target="#about" class="active">About</li>
+              <li data-target="#contact">Contact</li>
+            </ul>
+            <div class="panel active" id="about">
+              <p>Content for about tab...</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+            </div>
+            <div class="panel" id="contact">
+              <p>Content for contact tab...</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
